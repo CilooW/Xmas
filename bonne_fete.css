@@ -1,0 +1,10 @@
+html {
+    margin:0;
+    padding:0;
+    background: url("wallpaperchristmas.jpg")  no-repeat center fixed;
+    background-size: cover;
+}
+
+#imgyeti img {
+    width : 150px;
+}
