@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bonnes fêtes!</title>
     <link rel="stylesheet" href="bonne_fete.css"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 
@@ -12,6 +13,26 @@
 <div id="imgyeti">
     <img src="yetialone.png">
 </div>
+
+
+<p>Hello</p><p>2nd Paragraph</p>
+
+<script>
+    $('#imgyeti').click(function() {
+        var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#imgyeti'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+
+        $div.css({
+            left: Math.floor( Math.random() * widthMax ),
+            top: Math.floor( Math.random() * heightMax )
+        });
+    });
+</script>
 
 <script src="bonne_fete.js"></script>
 </body>

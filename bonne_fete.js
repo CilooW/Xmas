@@ -15,9 +15,11 @@ greetings();
 
 function changeYeti() {
     var yeti = document.getElementById("imgyeti");
-    $(yeti).on(click, yeti, function ()
+    $(yeti).on("click", function ()
      {
          //change css property position to random position
+        $(this).offset.left;
+        //$(this).offset.top;
 
     })
 }
