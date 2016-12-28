@@ -1,25 +1,26 @@
 /**
  * Created by Ciloo on 04/12/2016.
  */
-
-var name = prompt('Quel est votre nom?');
+$(document).ready(
+    function () {
+//var name = prompt('Quel est votre nom?');
 
 function greetings () {
    var sentence = document.getElementById("sentence");
 
-
-    return sentence.innerHTML = "Bonnes Fêtes " + name + " !";
+   return sentence.innerHTML = "Bonnes Fêtes " + name + " !";
 }
 
 greetings();
 
-function changeYeti() {
-    var yeti = document.getElementById("imgyeti");
-    $(yeti).on("click", function ()
-     {
-         //change css property position to random position
-        $(this).offset.left;
-        //$(this).offset.top;
+$("#imgyeti").mouseenter( function () {
 
-    })
-}
+    var posLeft = Math.floor(Math.random() * 500) + 1  +"px";
+    var posTop = Math.floor(Math.random() * 500) + 1  +"px";
+    console.log(posLeft);
+    console.log(posTop);
+    $(this).animate( {"margin-left" : posLeft, "margin-top" : posTop}, "slow")
+
+});
+
+    });

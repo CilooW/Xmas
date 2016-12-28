@@ -6,8 +6,12 @@ html {
 }
 
 #imgyeti img {
-    width : 150px;
+    width : 200px;
     position:absolute;
-    background-color:#d2fcd9;
+
+}
+
+#imgyeti {
+    margin-left: 400px;
 
 }
