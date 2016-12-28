@@ -13,5 +13,9 @@ html {
 
 #imgyeti {
     margin-left: 400px;
+}
 
+#sentence {
+    text-align: center;
+    font-size: 3em;
 }

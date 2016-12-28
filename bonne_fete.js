@@ -13,14 +13,16 @@ function greetings () {
 
 greetings();
 
-$("#imgyeti").mouseenter( function () {
+$("#imgyeti").mouseover( function () {
 
     var posLeft = Math.floor(Math.random() * 500) + 1  +"px";
     var posTop = Math.floor(Math.random() * 500) + 1  +"px";
-    console.log(posLeft);
-    console.log(posTop);
-    $(this).animate( {"margin-left" : posLeft, "margin-top" : posTop}, "slow")
+    $(this).animate( {"margin-left" : posLeft, "margin-top" : posTop}, "fast")
 
+});
+
+$("#imgyeti").mousedown( function () {
+    $("#yetialone").hide( 1 ).delay( 250 ).show( 1 );
 });
 
     });
