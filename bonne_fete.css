@@ -3,6 +3,7 @@ html {
     padding:0;
     background: url("wallpaperchristmas.jpg")  no-repeat center fixed;
     background-size: cover;
+
 }
 
 #imgyeti img {
@@ -12,10 +13,40 @@ html {
 }
 
 #imgyeti {
-    margin-left: 400px;
+    margin-left: 250px;
+    margin-top: 160px;
 }
 
 #sentence {
     text-align: center;
-    font-size: 3em;
+    color: darkred;
+    font-size: 6em;
+    font-family: 'Merienda One', cursive;
 }
+
+#cadre {
+    width : 100%;
+    height: 60vh;
+    border: 1px solid transparent;
+}
+
+.yetisentence {
+    position: absolute;
+    width:200px;
+    margin: 20px;
+    border-radius: 25px;
+    padding:10px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.social-network {
+    font-size:2em;
+    text-align: center;
+}
+
+.social-network a {
+
+    color: black;
+    font-weight: bold;
+}
+

@@ -3,7 +3,8 @@
  */
 $(document).ready(
     function () {
-//var name = prompt('Quel est votre nom?');
+
+var name = prompt('Quel est votre nom?');
 
 function greetings () {
    var sentence = document.getElementById("sentence");
@@ -13,16 +14,21 @@ function greetings () {
 
 greetings();
 
-$("#imgyeti").mouseover( function () {
+        $(function () {
+            $(".tlt").textillate({loop:true});
+        })
 
-    var posLeft = Math.floor(Math.random() * 500) + 1  +"px";
-    var posTop = Math.floor(Math.random() * 500) + 1  +"px";
-    $(this).animate( {"margin-left" : posLeft, "margin-top" : posTop}, "fast")
+        $.fn.snow();
 
-});
+//$("#imgyeti").mouseover( function () {});
 
 $("#imgyeti").mousedown( function () {
-    $("#yetialone").hide( 1 ).delay( 250 ).show( 1 );
+
+    var posLeft = Math.floor(Math.random() * 900) + 1  +"px";
+    var posTop = Math.floor(Math.random() * 300) + 1  +"px";
+
+    $("#yetialone").hide( 1 ).delay( 400 ).show( 1 );
+    $(this).animate( {"margin-left" : posLeft, "margin-top" : posTop})
 });
 
     });
