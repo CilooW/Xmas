@@ -9,7 +9,7 @@ var name = prompt('Quel est votre nom?');
 function greetings () {
    var sentence = document.getElementById("sentence");
 
-   return sentence.innerHTML = "Bonnes Fêtes " + name + " !";
+   return sentence.innerHTML = "Bonne Année " + name + " !";
 }
 
 greetings();
